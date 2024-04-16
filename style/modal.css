@@ -92,7 +92,7 @@
 
 .modal .body .right {
     width: 100%;
-    height: calc(100vh - 200px - 1rem);
+    height: calc(125vh - 20px - 1rem);
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -146,7 +146,7 @@
 }
 
 .slider span img {
-    width: 100%;
+    width: 50%;
     border-radius: 6px;
 }
 
