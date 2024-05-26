@@ -82,7 +82,7 @@ section.home .left hr {
 section.home .left p {
     margin: 10px 5px;
     font-size: 18px;
-    color: var(--c-grey);
+    color: #fff;
 }
 
 section.home .left .liens {
