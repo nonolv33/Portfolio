@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LE VERGE Noémie | Portfolio</title>
+    <link rel="shortcut icon" href="./ressources/icone.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Curseur de la souris -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+</head>
+
+<body>
+
+    <!-- <div class="loader_container">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div> -->
+
+    <header>
+        <nav>
+            <div class="logo" onclick="location.href='#';"><img src="./ressources/logo.png" alt=""></div>
+
+            <ul class="nav_list" id="nav_list">
+                <a href='index.html#accueil'>
+                    <span class="material-symbols-rounded">home</span>Accueil
+                </a>
+                <a href='index.html#experience'>
+                    <span class="material-symbols-rounded">segment</span>Mon expérience
+                </a>
+                <a href='index.html#competences'>
+                    <span class="material-symbols-rounded">developer_guide</span>Mes compétences
+                </a>
+                <a href='index.html#projets'>
+                    <span class="material-symbols-rounded">code</span>Mes projets
+                </a>
+            </ul>
+
+            <div data-cursor="-black" class="burger" id="burgerBtn">
+                <span class="first"></span>
+                <span class="second"></span>
+                <span class="third"></span>
+            </div>
+        </nav>
+
+        <script src="./js/navbar.js"></script>
+    </header>
+
+
+
+    <main class="main">
+        <div class="content">
+            <section id="accueil" class="home">
+                <div class="left">
+                    <h1>LE VERGE Noémie</h1>
+                    <h3><span class="auto-type"></span></h3>
+                    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                    <script>
+                        var typed = new Typed(".auto-type", {
+                            strings: ["Développeuse Front-End", "Développeuse Back-End"],
+                            typeSpeed: 50,
+                            backSpeed: 50,
+                            backDelay: 1500,
+                            loop: true
+                        });
+                    </script>
+                    <hr>
+                    <p>
+                        Étudiante en développement web à Mont-de-Marsan, âgée de 21 ans, ma passion pour l'informatique se
+                        manifeste à travers mon engouement pour le développement web. 
+                       
+                    </p>
+                    <div class="liens">
+                        <a href="./ressources/CV_Noemie.pdf" target="blank"><div class="lien_reseau"><i class="ri-article-fill"></i></div></a>
+                        <a href="https://github.com/nonolv33" target="blank"><div class="lien_reseau"><i class="ri-github-fill"></i></div></a>
+                        <a href="https://www.linkedin.com/in/no%C3%A9mie-le-verge-2950ba1b7/" target="blank"><div class="lien_reseau"><i class="ri-linkedin-box-fill"></i></div></a>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="img_container">
+                        <img src="./ressources/me.png" alt="" class="img_profil">
+                        <div class="carre" id="carre-1"></div>
+                        <div class="carre" id="carre-2"></div>
+                        <div class="carre" id="carre-3"></div>
+                        <div class="carre" id="carre-4"></div>
+                        <div class="carre" id="carre-5"></div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="experience" class="experience reveal">
+                <h2>Expérience</h2>
+
+                <div class="container">
+                    <div class="timeline-block timeline-block-right reveal_right">
+                        <div class="marker"></div>
+                        <div class="timeline-content">
+                            <h3 data-cursor="-black">2022 - Présent</h3>
+                            <span>BTS SIO (Services Informatiqes aux Organisations)</span>
+                            <p>Mon entrée à l'école supérieure en alternance au sein de <a data-cursor="-black"
+                                    href="https://esnl.campuslandes.com/" target="blank">l'ESNL <span
+                                        class="material-symbols-rounded">open_in_new</span></a> a représenté une
+                                décision stratégique dans mon parcours informatique spécialisé dans le développement web
+                            </p><br>
+                            <p>J'ai choisi de suivre ce cursus tout en travaillant au sein de l'entreprise <a data-cursor="-black"
+                                href="https://www.euroedi.com/" target="blank">Euroedi <span
+                                    class="material-symbols-rounded">open_in_new</span></a> en
+                                tant qu'alternante technicienne EDI (electronic data interchange)</p><br>
+                            <p>Cette expérience en alternance me permet de développer des compétences professionnelles
+                                tangibles, et j'ai l'opportunité de contribuer de manière significative à plusieurs
+                                projets au sein de l'entreprise</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-block timeline-block-left reveal_left">
+                        <div class="marker"></div>
+                        <div class="timeline-content">
+                            <h3 data-cursor="-black">2020 - 2022</h3>
+                            <span>BTS CG (Comptabilité et Gestion)</span>
+                            <p>J'ai suivi ce BTS à Mont-de-Marsan au sein du lycée <a data-cursor="-black"
+                                    href="https://www.lyceedespiau.fr/" target="blank">Charles DESPIAU <span
+                                        class="material-symbols-rounded">open_in_new</span></a>, j'ai choisi cette formation car elle est la suite logique de mon Baccalauréat</p><br>
+                                      <p>  Par la suite pour élargir mes compétences, j'ai choisi de me tourner vers le domaine de l'informatique et plus précisément le développement  </p><br>
+                        </div>
+                    </div>
+
+                    <div class="timeline-block timeline-block-right reveal_right">
+                        <div class="marker"></div>
+                        <div class="timeline-content">
+                            <h3 data-cursor="-black">2017 - 2020</h3>
+                            <span>Baccalauréat Professionnel GA (Gestion et Administration)</span>
+                            <p>Pendant mes années au lycée Anatole de Monzie, j'ai poursuivi un parcours professionnel qui m'a
+                                offert des connaissances dans une variété de matières ainsi que l'apprentissage d'aptitude professionnelle.</p><br>
+                
+                            <p>Mon expérience au lycée a constitué une étape importante dans mon parcours en élargissant
+                                mes horizons académiques et en me préparant à la suite de mon parcours professionnel</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-block timeline-block-left reveal_left">
+                        <div class="marker"></div>
+                        <div class="timeline-content">
+                            <h3 data-cursor="-black">2013 - 2017</h3>
+                            <span>Brevet des collèges</span>
+                            <p>Au collège, j'ai suivi un programme général qui m'a permis d'acquérir les bases de
+                                l'éducation académique. J'ai étudié diverses matières telles que les mathématiques, le
+                                français, les sciences, et la géographie. Mon passage au collège a jeté les bases de ma
+                                formation académique en développant des compétences essentielles</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="competences" class="skills reveal">
+                <h2>Compétences</h2>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button id="accordion-button-1" aria-expanded="true">
+                            <span class="accordion-title"><span class="material-symbols-rounded">code</span>
+                                Front-End</span>
+                            <span class="material-symbols-rounded icon" aria-hidden="true">expand_more</span>
+                        </button>
+                        <div class="accordion-content">
+                            <!-- <hr> -->
+                            <div class="liste_competences">
+                                <div class="left">
+                                    <div class="competence">
+                                        <div class="name">
+                                            <h5>HTML</h5>
+                                            <p>80%</p>
+                                        </div>
+                                        <div class="barre">
+                                            <div class="progression" style="width: 80%;"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="competence">
+                                        <div class="name">
+                                            <h5>Node</h5>
+                                            <p>50%</p>
+                                        </div>
+                                        <div class="barre">
+                                            <div class="progression" style="width: 50%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="competence">
+                                        <div class="name">
+                                            <h5>CSS</h5>
+                                            <p>70%</p>
+                                        </div>
+                                        <div class="barre">
+                                            <div class="progression" style="width: 70%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-2" aria-expanded="false">
+                            <span class="accordion-title"><span class="material-symbols-rounded">dns</span>
+                                Back-End</span>
+                            <span class="material-symbols-rounded icon" aria-hidden="true">expand_more</span>
+                        </button>
+                        <div class="accordion-content">
+                            <!-- <hr> -->
+                            <div class="liste_competences">
+                                <div class="left">
+                                    <div class="competence">
+                                        <div class="name">
+                                            <h5>PHP</h5>
+                                            <p>30%</p>
+                                        </div>
+                                        <div class="barre">
+                                            <div class="progression" style="width: 30%;"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="competence">
+                                        <div class="name">
+                                            <h5>SQL</h5>
+                                            <p>50%</p>
+                                        </div>
+                                        <div class="barre">
+                                            <div class="progression" style="width: 50%;"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="competence">
+                                        <div class="name">
+                                            <h5>JAVA</h5>
+                                            <p>30%</p>
+                                        </div>
+                                        <div class="barre">
+                                            <div class="progression" style="width: 30%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="competence">
+                                        <div class="name">
+                                            <h5>Javascript</h5>
+                                            <p>30%</p>
+                                        </div>
+                                        <div class="barre">
+                                            <div class="progression" style="width: 30%;"></div>
+                                        </div>
+                                    </div>
+
+                                    <!-- <div class="competence">
+                                        <div class="name">
+                                            <h5>MariaDB</h5>
+                                            <p>60%</p>
+                                        </div> 
+                                        <div class="barre">
+                                            <div class="progression" style="width: 60%;"></div>
+                                        </div>
+                                    </div> -->
+
+                                     <!-- <div class="competence">
+                                        <div class="name">
+                                            <h5>Docker</h5>
+                                            <p>40%</p>
+                                        </div> 
+                                        <div class="barre">
+                                            <div class="progression" style="width: 40%;"></div>
+                                        </div> 
+                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <hr>
+                    <div class="accordion-item">
+                        <button id="accordion-button-3" aria-expanded="false">
+                            <span class="accordion-title"><span class="material-symbols-rounded">edit</span>
+                                Design</span>
+                            <span class="material-symbols-rounded icon" aria-hidden="true">expand_more</span>
+                        </button>
+                        <div class="accordion-content">
+                            <!-- <hr> -->
+                            <div class="liste_competences">
+                                <div class="left">
+                                    <div class="competence">
+                                        <div class="name">
+                                            <h5>Figma</h5>
+                                            <p>70%</p>
+                                        </div>
+                                        <div class="barre">
+                                            <div class="progression" style="width: 80%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="projets" class="projects reveal">
+                <h2>Projets</h2>
+
+                <div class="liste_projets">
+
+                    <div class="projet">
+                        <img src="./ressources/projets/Portfolio/portfolio image1.png" alt="">
+                        <div class="description">
+                            <h3>Mon Portfolio</h3>
+                            <div class="technos">
+                                <p data-cursor="-black">HTML</p>
+                                <p data-cursor="-black">CSS</p>
+                                <p data-cursor="-black">PHP</p>
+                                <p data-cursor="-black">JS</p>
+                             <!--   <p data-cursor="-black">SQL</p>-->
+                            </div>
+                            <p> Mon portfolio est un site web élégant et fonctionnel, conçu pour mettre en avant mes compétences en développement. 
+                                Il est créé en utilisant les langages HTML, CSS et JavaScript. Chaque section présente de manière concise mes compétences, mon parcours et mes projets réalisés. 
+                                L'objectif principal est de fournir aux visiteurs une vue d'ensemble claire et attrayante de mes capacités en développement.
+                            <!--
+                            </p>
+                            <a data-cursor="-black" class="goToProject" data-target="Mon Portfolio">Voir le projet</a> -->
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="projet">
+                        <img src="./ressources/projets/Site Boucherie/site-boucherie.png" alt="">
+                        <div class="description">
+                            <h3>Site Web Boucherie</h3>
+                            <div class="technos">
+                                <p data-cursor="-black">HTML</p>
+                                <p data-cursor="-black">CSS</p>
+                                <p data-cursor="-black">PHP</p>
+                                <p data-cursor="-black">JS</p>
+                                <p data-cursor="-black">SQL</p>
+                            </div>
+                            <p>Ce site vitrine pour une boucherie permet à ce petit commerce d'assurer une présence en ligne. Grâce à la page "commander", 
+                                les clients peuvent passer leurs commandes directement sur le site et venir les récupérer en magasin.
+                                 Cela réduit le nombre d'appels téléphoniques reçus par le commerce, tout en faisant gagner du temps aux clients pour leurs achats.
+                            </p>
+                            <a href="https://www.example.com/projet-site-boucherie" target="_blank" data-cursor="-black" class="goToProject" data-target="site-boucherie">Voir le projet</a>
+                        </div>
+                    </div>
+
+                  
+
+                    <hr>
+
+                    <div class="projet">
+                        <img src="./ressources/projets/tableau annexe/tableau.png" alt="">
+                        <div class="description">
+                            <h3>Tableau des compétences</h3>
+                            <div class="technos">
+                                <p data-cursor="-black">PDF</p>
+                                
+                            </div>
+                            <!--
+                            <p>Le Mastermind est un TP de BTS SIO visant à refaire ce classique des jeux de société. Le
+                                but était d'utiliser uniquement le JavaScript pour le faire.
+                                Comme j'ai aimé faire ce projet, j'ai décidé de l'héberger sur Github, et il est donc
+                                accessible via ce <a data-cursor="-black"
+                                    href="https://su-apt-install-wayz.github.io/mastermind/" target="blank">lien <span
+                                        class="material-symbols-rounded">open_in_new</span></a>. -->
+                            </p><!---
+                            <a data-cursor="-black" class="goToProject" data-target="mastermind">Voir le tableau</a> -->
+                            <a href="./ressources/projets/tableau annexe/annexe V2.pdf" target="_blank" data-cursor="-black" class="goToProject" data-target="pdf-project">Voir le tableau</a>
+
+                        </div>
+                    </div>
+                </div>
+<!--
+            </section>
+        </div>
+    </main>
+-->
+
+
+    <div class="footer_button">
+        <div data-cursor="-black" class="touche" id="laTouche">
+            <p onclick="enableFooter()" id="touche" class="material-symbols-rounded">touch_app</p>
+        </div>
+    </div>
+
+    <footer class="footer" id="footer">
+        <div class="footer_content">
+            <div class="footer_list">
+                <a data-cursor="-black" href="mentions.html" class="footer_item">Mentions légales</a>
+                <a data-cursor="-black" href="mailto:noemie.leverge@gmail.com" class="footer_item">Contact</a>
+            </div>
+            <span>
+                <p id="year"></p>
+                <p>Website by LE VERGE Noémie.</p>
+            </span>
+        </div>
+
+        <span onclick="disableFooter()" class="material-symbols-rounded close_footer">close</span>
+
+       
+
+    <script src="./js/footer.js"></script>
+
+    <div class="modal" id="Mon Portfolio">
+        <div class="header">
+            <span>
+                <h3>Mon Portfolio</h3>
+                <div class="mac_bubles">
+                    <div class="mac_buble"></div>
+                    <div class="mac_buble"></div>
+                    <div class="mac_buble"></div>
+                </div>
+            </span>
+            <span onclick="disableModal('Mon Portfolio')" class="material-symbols-rounded close_modal">close</span>
+        </div> 
+        <div class="body">
+            <div class="left"></div>
+            <div class="right">
+                <div class="slider">
+                    <span class="active">
+                        <h4>Mentions légales</h4><img src="./ressources/projets/Portfolio/portfolio image mention legale TEST.png"
+                            alt="Mon Portfolio | Page des mentions légales">
+                    </span>
+                    <span>
+                        <h4>Experience</h4><img src="./ressources/projets/Portfolio/portfolio image2.png"
+                            alt="Mon Portfolio | Mes expériences">
+                    </span>
+                </div>
+            </div>
+        </div> 
+                    <!--
+                     <span>
+                        <h4>Page d'accueil</h4><img src="./ressources/projets/doctur/home.PNG"
+                            alt="DocTur | Page d'accueil">
+                    </span>
+                    <span>
+                        <h4>Page des favoris</h4><img src="./ressources/projets/doctur/fav.PNG"
+                            alt="DocTur | Page des favoris">
+                    </span>
+                    <span>
+                        <h4>Page du dossier</h4><img src="./ressources/projets/doctur/folder.PNG"
+                            alt="DocTur | Page du dossier">
+                    </span> 
+                </div> 
+                <div class="slider-nav">
+                    <span class="arrow"><span data-cursor="-black"
+                            class="material-symbols-rounded previous">arrow_left_alt</span></span>
+                    <span class="arrow"><span data-cursor="-black"
+                            class="material-symbols-rounded next">arrow_right_alt</span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="clinique">
+        <div class="header">
+            <span>
+                <h3>Clinique LPF</h3>
+                <div class="mac_bubles">
+                    <div class="mac_buble"></div>
+                    <div class="mac_buble"></div>
+                    <div class="mac_buble"></div>
+                </div>
+            </span>
+            <span onclick="disableModal('clinique')" class="material-symbols-rounded close_modal">close</span>
+        </div>
+        <div class="body">
+            <div class="left"></div>
+            <div class="right">
+                <div class="slider">
+                    <span class="active">
+                        <h4>Page de connexion</h4><img src="./ressources/projets/clinique/login.PNG"
+                            alt="Clinique LPF | Page de connexion">
+                    </span>
+                    <span>
+                        <h4>Page d'accueil Secrétaire</h4><img src="./ressources/projets/clinique/home.PNG"
+                            alt="Clinique LPF | Page d'accueil Secrétaire">
+                    </span>
+                    <span>
+                        <h4>Page admission (Patient)</h4><img src="./ressources/projets/clinique/admission1.PNG"
+                            alt="Clinique LPF | Page admission (patient)">
+                    </span>
+                    <span>
+                        <h4>Page admission (Hospitalisation)</h4><img src="./ressources/projets/clinique/admission2.PNG"
+                            alt="Clinique LPF | Page admission (hospitalisation)">
+                    </span>
+                    <span>
+                        <h4>Page admission (Couverture sociale)</h4><img
+                            src="./ressources/projets/clinique/admission3.PNG"
+                            alt="Clinique LPF | Page admission (Couverture sociale)">
+                    </span>
+                    <span>
+                        <h4>Page admission (Documents)</h4><img src="./ressources/projets/clinique/admission4.PNG"
+                            alt="Clinique LPF | Page admission (Documents)">
+                    </span>
+                    <span>
+                        <h4>Page d'accueil Médecin</h4><img src="./ressources/projets/clinique/home_doctor.PNG"
+                            alt="Clinique LPF | Page d'accueil Médecin">
+                    </span>
+                </div>
+                <div class="slider-nav">
+                    <span class="arrow"><span data-cursor="-black"
+                            class="material-symbols-rounded previous">arrow_left_alt</span></span>
+                    <span class="arrow"><span data-cursor="-black"
+                            class="material-symbols-rounded next">arrow_right_alt</span></span>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <!-- <div class="modal" id="wikicrew">
+        <div class="header">
+            <span>
+                <h3>TheWikiCrew</h3>
+                <div class="mac_bubles">
+                    <div class="mac_buble"></div>
+                    <div class="mac_buble"></div>
+                    <div class="mac_buble"></div>
+                </div>
+            </span>
+            <span onclick="disableModal('wikicrew')" class="material-symbols-rounded close_modal">close</span>
+        </div>
+    </div> 
+
+     <div class="modal" id="ezkeyz">
+        <div class="header">
+            <span>
+                <h3>EZKEYZ</h3>
+                <div class="mac_bubles">
+                    <div class="mac_buble"></div>
+                    <div class="mac_buble"></div>
+                    <div class="mac_buble"></div>
+                </div>
+            </span>
+            <span onclick="disableModal('ezkeyz')" class="material-symbols-rounded close_modal">close</span>
+        </div>
+    </div> 
+
+    <div class="modal" id="mastermind">
+        <div class="header">
+            <span>
+                <h3>Mastermind</h3>
+                <div class="mac_bubles">
+                    <div class="mac_buble"></div>
+                    <div class="mac_buble"></div>
+                    <div class="mac_buble"></div>
+                </div>
+            </span>
+            <span onclick="disableModal('mastermind')" class="material-symbols-rounded close_modal">close</span>
+        </div> 
+        <div class="body">
+            <div class="left"></div>
+            <div class="right">
+                <div class="slider">
+                    <span class="active">
+                        <h4>Page d'accueil</h4><img src="./ressources/projets/mastermind/home.JPG"
+                            alt="Mastermind | Page d'accueil">
+                    </span>
+                    <span>
+                        <h4>Page du jeu en Facile</h4><img src="./ressources/projets/mastermind/game_easy.JPG"
+                            alt="Mastermind | Page du jeu en Facile">
+                    </span>
+                    <span>
+                        <h4>Page du jeu en Moyen</h4><img src="./ressources/projets/mastermind/game_medium.JPG"
+                            alt="Mastermind | Page du jeu en Moyen">
+                    </span>
+                    <span>
+                        <h4>Page du jeu en Difficile</h4><img src="./ressources/projets/mastermind/game_hard.JPG"
+                            alt="Mastermind | Page du jeu en Difficile">
+                    </span>
+                    <span>
+                        <h4>Page des Scores</h4><img src="./ressources/projets/mastermind/scores.JPG"
+                            alt="Mastermind | Page des Scores">
+                    </span>
+                </div>
+                <div class="slider-nav">
+                    <span class="arrow"><span data-cursor="-black"
+                            class="material-symbols-rounded previous">arrow_left_alt</span></span>
+                    <span class="arrow"><span data-cursor="-black"
+                            class="material-symbols-rounded next">arrow_right_alt</span></span>
+                </div>
+            </div>
+        </div> -->
+    
+
+
+    <script src="./js/main.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/accordion.js"></script>
+    <script src="./js/slider.js"></script>
+
+    <script>
+        const touche = document.getElementById('touche');
+        // Vérifier si l'appareil est un mobile ou une tablette
+        function estMobileOuTablette() {
+            return (typeof window.orientation !== 'undefined') || (navigator.userAgent.indexOf('IEMobile') !== -1);
+        }
+
+        // Vérifier si l'appareil prend en charge les écrans tactiles
+        function prendEnChargeEcranTactile() {
+            return 'ontouchstart' in window || navigator.maxTouchPoints;
+        }
+
+        // Exemple d'utilisation
+        if (!estMobileOuTablette()) {
+            var cursor = new MouseFollower();
+            touche.classList.remove('material-symbols-rounded');
+            touche.innerText = "F";
+        }
+
+        if (!prendEnChargeEcranTactile()) {
+            var cursor = new MouseFollower();
+            touche.classList.remove('material-symbols-rounded');
+            touche.innerText = "F";
+        }
+    </script>
+
+</body>
+
+</html>
