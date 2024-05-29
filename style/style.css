@@ -185,18 +185,7 @@ section.home .right .img_container:hover #carre-5 {
     transition: all 0.3s ease;
 }
 
-/* section.home .right .img_container:hover .img_profil {
-    animation: coucou 150ms ease ;
-}
 
-@keyframes coucou {
-    0% {
-        transform: rotate(4deg);
-    }
-    100% {
-        transform: rotate(6deg);
-    }
-} */
 
 
 @media (max-width:1020px) {
